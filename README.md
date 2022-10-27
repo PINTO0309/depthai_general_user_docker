@@ -32,6 +32,8 @@ python3 depthai_demo.py
 
 https://user-images.githubusercontent.com/33194443/198327250-17cbb3aa-57c7-4f20-8024-03cd3e3483ae.mp4
 
+https://user-images.githubusercontent.com/33194443/198331388-a7159877-4c18-460a-8905-efc775e721f2.mp4
+
 ```
 sudo chown -R user /etc/udev/rules.d \
 && sudo /lib/systemd/systemd-udevd --daemon \
