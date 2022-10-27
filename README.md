@@ -1,6 +1,9 @@
 # depthai_general_user_docker
 
 ```bash
+git clone https://github.com/luxonis/depthai && cd depthai
+```
+```bash
 docker pull pinto0309/oakd:latest
 
 or
