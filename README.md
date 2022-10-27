@@ -1,14 +1,27 @@
 # depthai_general_user_docker
 
-```
+```bash
 docker pull pinto0309/oakd:latest
 
 or
 
 docker build -t pinto0309/oakd:latest .
 ```
-
+```bash
+xhost +local: && \
+docker run --rm -it \
+-v /dev/bus/usb:/dev/bus/usb \
+--device-cgroup-rule='c 189:* rmw' \
+-e XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
+-e DISPLAY=$DISPLAY \
+-v /tmp/.X11-unix/:/tmp/.X11-unix:rw \
+-v `pwd`:/home/user/workdir \
+-w /home/user/workdir/ \
+--net=host \
+--privileged \
+pinto0309/oakd:latest
 ```
+```bash
 python3 depthai_demo.py
 ```
 
