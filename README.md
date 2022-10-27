@@ -1,5 +1,7 @@
 # depthai_general_user_docker
 
+- OAK-D Pro W
+
 ```bash
 git clone https://github.com/luxonis/depthai && cd depthai
 ```
